@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="com.atmecs.script.InsightCarrerContactScript">
+        <methods>
+          <include name="clickOnMedia"/>
+          <include name="clickOnPartner"/>
+          <include name="mediaValidate"/>
+          <include name="servicesFooterValidate"/>
+          <include name="partnerValidate"/>
+          <include name="clickOnServices"/>
+          <include name="configSetup"/>
+        </methods>
+      </class> <!-- com.atmecs.script.InsightCarrerContactScript -->
+      <class name="com.atmecs.script.ServicesContextMenu">
+        <methods>
+          <include name="validateInfraServices"/>
+          <include name="validateSubmenu"/>
+          <include name="infrastructureservice"/>
+          <include name="hoverOnServices"/>
+          <include name="configSetup"/>
+        </methods>
+      </class> <!-- com.atmecs.script.ServicesContextMenu -->
+      <class name="com.atmecs.script.FinalBlogScript">
+        <methods>
+          <include name="clickSumit"/>
+          <include name="validateBlog"/>
+          <include name="hoverOnSight"/>
+          <include name="configSetup"/>
+        </methods>
+      </class> <!-- com.atmecs.script.FinalBlogScript -->
+      <class name="com.atmecs.script.ServicePartnerMediaScript">
+        <methods>
+          <include name="clickOnContactUs"/>
+          <include name="clickOnInsight"/>
+          <include name="ValiadteInsightFooter"/>
+          <include name="ValidateInsight"/>
+          <include name="clickOnCarrer"/>
+          <include name="validateContactus"/>
+          <include name="configSetup"/>
+        </methods>
+      </class> <!-- com.atmecs.script.ServicePartnerMediaScript -->
+      <class name="com.atmecs.script.HomeAboutusFooterScript">
+        <methods>
+          <include name="clickHome"/>
+          <include name="homefooterValidate"/>
+          <include name="aboutUsFooter"/>
+          <include name="clickOnAbout"/>
+          <include name="configSetup"/>
+        </methods>
+      </class> <!-- com.atmecs.script.HomeAboutusFooterScript -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
