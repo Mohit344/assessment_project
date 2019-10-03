@@ -3,12 +3,18 @@
 <suite name="Suite">
 	<test thread-count="5" name="Test">
 		<classes>
-			<class name="com.atmecs.script.HomeAboutusFooterScript" />
-			<class name="com.atmecs.script.InsightCarrerContactScript" /> 
-			<class name="com.atmecs.script.ServicePartnerMediaScript" /> 
-		    <class name="com.atmecs.script.ServicesContextMenu" />
-		       <class name="com.atmecs.script.FinalBlogScript" />
-			
+<!-- 			<class name="com.atmecs.script.HomeAboutusFooterScript" /> -->
+<!-- 			<class name="com.atmecs.script.InsightCarrerContactScript" />  -->
+<!-- 			<class name="com.atmecs.script.ServicePartnerMediaScript" />  -->
+<!-- 		    <class name="com.atmecs.script.ServicesContextMenu" /> -->
+<!-- 		       <class name="com.atmecs.script.FinalBlogScript" /> -->
+
+			<class name="com.atmecs.scenerios.script.HomePageExploreScriptScenrio" />
+			<class name="com.atmecs.scenerios.script.MoreInfoOneScript" />
+			<class name="com.atmecs.scenerios.script.MoreInfoScripTwo" />
+			<class name="com.atmecs.scenerios.script.MoreInfoScriptThird" />
+			<class name="com.atmecs.scenerios.script.MoreInfoScriptForth" />
+			<class name="com.atmecs.scenerios.script.MoreInfoScriptFive" />
 			
 		<!--  	<class name="com.atmecs.script.BlogScript" /> -->
 		</classes>

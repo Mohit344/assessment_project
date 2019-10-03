@@ -16,6 +16,8 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
+import com.atmecs.constant.FileConstant;
+
 
 public class CommonUtility {
 
@@ -28,8 +30,8 @@ public class CommonUtility {
 
 	public static void clickElement(WebDriver driver,final String xpath) {
 		FluentWait<WebDriver> fluentWait= new FluentWait<WebDriver>(driver)
-				.ignoring(ElementClickInterceptedException.class).pollingEvery(Duration.ofMillis(1000))
-				.withTimeout(Duration.ofMillis(30000));
+				.ignoring(ElementClickInterceptedException.class).pollingEvery(Duration.ofMillis(FileConstant.polling_time))
+				.withTimeout(Duration.ofMillis(FileConstant.time));
 		fluentWait.until(new Function<WebDriver, Boolean>() {
 			public Boolean apply(WebDriver driver) {
 				WebElement element= driver.findElement(By.xpath(xpath));
@@ -39,8 +41,6 @@ public class CommonUtility {
 
 
 		});
-
-
 
 	}
 	/**
@@ -53,8 +53,8 @@ public class CommonUtility {
 	 */
 
 	public static void selectDropdown(WebDriver driver, final String xpath,int timeOut,final String text) {
-		FluentWait<WebDriver> fluentWait= new FluentWait<WebDriver>(driver).pollingEvery(Duration.ofMillis(1000))
-				.withTimeout(Duration.ofMillis(30000));
+		FluentWait<WebDriver> fluentWait= new FluentWait<WebDriver>(driver).pollingEvery(Duration.ofMillis(FileConstant.polling_time))
+				.withTimeout(Duration.ofMillis(FileConstant.time));
 		fluentWait.until(new Function<WebDriver, Boolean>() {
 			public Boolean apply(WebDriver driver) {
 				WebElement element =driver.findElement(By.xpath(xpath));
@@ -75,8 +75,8 @@ public class CommonUtility {
 	 */
 	public static void clickAndSendText(WebDriver driver, final String xpath,int timeOutInSeconds, final String text) {
 		FluentWait<WebDriver> fluentWait = new FluentWait<WebDriver>(driver)
-				.ignoring(ElementClickInterceptedException.class).pollingEvery(Duration.ofMillis(1000))
-				.withTimeout(Duration.ofMillis(30000));
+				.ignoring(ElementClickInterceptedException.class).pollingEvery(Duration.ofMillis(FileConstant.polling_time))
+				.withTimeout(Duration.ofMillis(FileConstant.time));
 
 		fluentWait.until(new Function<WebDriver, Boolean>() {
 			public Boolean apply(WebDriver driver) {
@@ -100,8 +100,8 @@ public class CommonUtility {
 	 */
 	public static String getText(WebDriver driver,final String xpath) {
 		FluentWait<WebDriver> fluentWait= new FluentWait<WebDriver>(driver)
-				.ignoring(ElementClickInterceptedException.class).pollingEvery(Duration.ofMillis(1000))
-				.withTimeout(Duration.ofMillis(30000));
+				.ignoring(ElementClickInterceptedException.class).pollingEvery(Duration.ofMillis(FileConstant.polling_time))
+				.withTimeout(Duration.ofMillis(FileConstant.time));
 		return fluentWait.until(new Function<WebDriver, String>() {
 			public String apply(WebDriver driver) {
 				WebElement element= driver.findElement(By.xpath(xpath));
@@ -148,8 +148,8 @@ public class CommonUtility {
 
 	public static void clearElement(WebDriver driver,final String xpath) {
 		FluentWait<WebDriver> fluentWait= new FluentWait<WebDriver>(driver)
-				.ignoring(ElementClickInterceptedException.class).pollingEvery(Duration.ofMillis(1000))
-				.withTimeout(Duration.ofMillis(30000));
+				.ignoring(ElementClickInterceptedException.class).pollingEvery(Duration.ofMillis(FileConstant.polling_time))
+				.withTimeout(Duration.ofMillis(FileConstant.time));
 		fluentWait.until(new Function<WebDriver, Boolean>() {
 			public Boolean apply(WebDriver driver) {
 				WebElement element= driver.findElement(By.xpath(xpath));
@@ -169,7 +169,7 @@ public class CommonUtility {
 	 */
 	public static boolean isElementVisible(WebDriver driver, String xpath) {
 
-		WebDriverWait wait = new WebDriverWait(driver, 30);
+		WebDriverWait wait = new WebDriverWait(driver, FileConstant.Expicit_Wait);
 		try {
 			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(xpath)));
 		} catch (Exception exception) {
@@ -212,7 +212,7 @@ public class CommonUtility {
 	public static  void scrollToElement(WebDriver driver,String xpath) {
 		WebElement element= driver.findElement(By.xpath(xpath));
 		JavascriptExecutor js= (JavascriptExecutor)driver;
-		js.executeScript("arguments[0].scrollIntoView();", element);
+		js.executeScript("arguments[0].scrollIntoView(false);", element);
 	}
 
 
@@ -257,4 +257,3 @@ public class CommonUtility {
 
 
 }
-

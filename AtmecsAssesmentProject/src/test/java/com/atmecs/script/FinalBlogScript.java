@@ -1,21 +1,23 @@
 package com.atmecs.script;
 
 import org.apache.log4j.Logger;
-import org.openqa.selenium.remote.RemoteWebDriver;
+
+
 import org.testng.annotations.Test;
 
 import com.atmecs.constant.FindLocator;
 import com.atmecs.dataprovider.ValidatingData;
-import com.atmecs.driver.Driver_Class;
+import com.atmecs.driver.DriverClass;
 import com.atmecs.pages.BlogPages;
 import com.atmecs.pages.ValidateBlog;
 
-public class FinalBlogScript extends Driver_Class{
+public class FinalBlogScript extends DriverClass{
 
 	
 	
 	FindLocator loc = new  FindLocator();
-ValidatingData data = new ValidatingData();
+	ValidatingData data = new ValidatingData();
+
 	@Test(priority=21)
 	public void  hoverOnSight()
 	{

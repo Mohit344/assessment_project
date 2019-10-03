@@ -1,16 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test thread-count="5" name="Default test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.atmecs.script.FinalBlogScript">
+      <class name="com.atmecs.scenerios.script.MoreInfoScriptThird">
         <methods>
-          <include name="clickSumit"/>
-          <include name="validateBlog"/>
-          <include name="hoverOnSight"/>
+          <include name="configSetup"/>
+          <include name="validateInfothirdbread"/>
+          <include name="clickOnInfomorethird"/>
+        </methods>
+      </class> <!-- com.atmecs.scenerios.script.MoreInfoScriptThird -->
+      <class name="com.atmecs.scenerios.script.MoreInfoOneScript">
+        <methods>
+          <include name="configSetup"/>
+          <include name="clickOnInfo"/>
+          <include name="validateBrudInfo1"/>
+        </methods>
+      </class> <!-- com.atmecs.scenerios.script.MoreInfoOneScript -->
+      <class name="com.atmecs.scenerios.script.MoreInfoScriptFive">
+        <methods>
+          <include name="ValiadteBreadCrumb"/>
+          <include name="clickOnInfoFifth"/>
           <include name="configSetup"/>
         </methods>
-      </class> <!-- com.atmecs.script.FinalBlogScript -->
+      </class> <!-- com.atmecs.scenerios.script.MoreInfoScriptFive -->
+      <class name="com.atmecs.scenerios.script.MoreInfoScriptForth">
+        <methods>
+          <include name="clickOnInfoForth"/>
+          <include name="configSetup"/>
+          <include name="ValiadteBreadCrumb"/>
+        </methods>
+      </class> <!-- com.atmecs.scenerios.script.MoreInfoScriptForth -->
+      <class name="com.atmecs.scenerios.script.HomePageExploreScriptScenrio">
+        <methods>
+          <include name="configSetup"/>
+          <include name="validateLandRight"/>
+        </methods>
+      </class> <!-- com.atmecs.scenerios.script.HomePageExploreScriptScenrio -->
+      <class name="com.atmecs.scenerios.script.MoreInfoScripTwo">
+        <methods>
+          <include name="configSetup"/>
+          <include name="clickOnInfomore2"/>
+          <include name="valiadeinfoTwoBrud"/>
+        </methods>
+      </class> <!-- com.atmecs.scenerios.script.MoreInfoScripTwo -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

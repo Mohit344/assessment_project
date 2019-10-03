@@ -3,54 +3,47 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.atmecs.script.InsightCarrerContactScript">
+      <class name="com.atmecs.scenerios.script.MoreInfoScriptThird">
         <methods>
-          <include name="clickOnMedia"/>
-          <include name="clickOnPartner"/>
-          <include name="mediaValidate"/>
-          <include name="servicesFooterValidate"/>
-          <include name="partnerValidate"/>
-          <include name="clickOnServices"/>
+          <include name="configSetup"/>
+          <include name="validateInfothirdbread"/>
+          <include name="clickOnInfomorethird"/>
+        </methods>
+      </class> <!-- com.atmecs.scenerios.script.MoreInfoScriptThird -->
+      <class name="com.atmecs.scenerios.script.MoreInfoOneScript">
+        <methods>
+          <include name="configSetup"/>
+          <include name="clickOnInfo"/>
+          <include name="validateBrudInfo1"/>
+        </methods>
+      </class> <!-- com.atmecs.scenerios.script.MoreInfoOneScript -->
+      <class name="com.atmecs.scenerios.script.MoreInfoScriptFive">
+        <methods>
+          <include name="ValiadteBreadCrumb"/>
+          <include name="clickOnInfoFifth"/>
           <include name="configSetup"/>
         </methods>
-      </class> <!-- com.atmecs.script.InsightCarrerContactScript -->
-      <class name="com.atmecs.script.ServicesContextMenu">
+      </class> <!-- com.atmecs.scenerios.script.MoreInfoScriptFive -->
+      <class name="com.atmecs.scenerios.script.MoreInfoScriptForth">
         <methods>
-          <include name="validateInfraServices"/>
-          <include name="validateSubmenu"/>
-          <include name="infrastructureservice"/>
-          <include name="hoverOnServices"/>
+          <include name="clickOnInfoForth"/>
           <include name="configSetup"/>
+          <include name="ValiadteBreadCrumb"/>
         </methods>
-      </class> <!-- com.atmecs.script.ServicesContextMenu -->
-      <class name="com.atmecs.script.FinalBlogScript">
+      </class> <!-- com.atmecs.scenerios.script.MoreInfoScriptForth -->
+      <class name="com.atmecs.scenerios.script.HomePageExploreScriptScenrio">
         <methods>
-          <include name="clickSumit"/>
-          <include name="validateBlog"/>
-          <include name="hoverOnSight"/>
           <include name="configSetup"/>
+          <include name="validateLandRight"/>
         </methods>
-      </class> <!-- com.atmecs.script.FinalBlogScript -->
-      <class name="com.atmecs.script.ServicePartnerMediaScript">
+      </class> <!-- com.atmecs.scenerios.script.HomePageExploreScriptScenrio -->
+      <class name="com.atmecs.scenerios.script.MoreInfoScripTwo">
         <methods>
-          <include name="clickOnContactUs"/>
-          <include name="clickOnInsight"/>
-          <include name="ValiadteInsightFooter"/>
-          <include name="ValidateInsight"/>
-          <include name="clickOnCarrer"/>
-          <include name="validateContactus"/>
           <include name="configSetup"/>
+          <include name="clickOnInfomore2"/>
+          <include name="valiadeinfoTwoBrud"/>
         </methods>
-      </class> <!-- com.atmecs.script.ServicePartnerMediaScript -->
-      <class name="com.atmecs.script.HomeAboutusFooterScript">
-        <methods>
-          <include name="clickHome"/>
-          <include name="homefooterValidate"/>
-          <include name="aboutUsFooter"/>
-          <include name="clickOnAbout"/>
-          <include name="configSetup"/>
-        </methods>
-      </class> <!-- com.atmecs.script.HomeAboutusFooterScript -->
+      </class> <!-- com.atmecs.scenerios.script.MoreInfoScripTwo -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

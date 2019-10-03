@@ -1,18 +1,19 @@
 package com.atmecs.script;
 
 import org.apache.log4j.Logger;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.remote.RemoteWebDriver;
+
+
+
+
 import org.testng.annotations.Test;
 
 import com.atmecs.constant.FindLocator;
-import com.atmecs.dataprovider.DataProviderTwo;
-import com.atmecs.dataprovider.DataProviderthird;
-import com.atmecs.driver.Driver_Class;
+import com.atmecs.dataprovider.DataProviderData;
+import com.atmecs.driver.DriverClass;
 import com.atmecs.pages.HomeFooterValidateMethod;
 import com.atmecs.pages.ServiceContextpages;
 
-public class ServicesContextMenu extends Driver_Class  {
+public class ServicesContextMenu extends DriverClass  {
 	
 	FindLocator loc = new  FindLocator();
 @Test(priority =17)	
@@ -21,7 +22,7 @@ public void hoverOnServices()
 log.info("hover on the services  and digital life");
 	ServiceContextpages.mouseHover(driver, loc);	
 }
-@Test(priority = 18, dataProvider = "testdata2", dataProviderClass = DataProviderTwo.class)
+@Test(priority = 18, dataProvider = "testdata2", dataProviderClass = DataProviderData.class)
 public void validateSubmenu(String subserviecs)
 {
 	HomeFooterValidateMethod.validatesubserviecs(subserviecs, loc, driver);
@@ -37,7 +38,7 @@ log.info("HoverOnInfra ");
 	ServiceContextpages.mouseHoverOnInfra(driver, loc);
 }
 
-@Test(priority = 20, dataProvider = "testdata3", dataProviderClass = DataProviderthird.class)
+@Test(priority = 20, dataProvider = "testdata3", dataProviderClass = DataProviderData.class)
 
 	public void validateInfraServices(String subserviecs)
 	{	

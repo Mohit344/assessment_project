@@ -1,29 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" ignored="5" total="17" passed="12">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="37602" started-at="2019-10-01T20:34:04 IST" finished-at="2019-10-01T20:34:41 IST">
+  <suite name="Suite" duration-ms="57181" started-at="2019-10-03T21:31:43 IST" finished-at="2019-10-03T21:32:40 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="37602" started-at="2019-10-01T20:34:04 IST" finished-at="2019-10-01T20:34:41 IST">
-      <class name="com.atmecs.script.FinalBlogScript">
-        <test-method status="PASS" signature="configSetup()[pri:0, instance:com.atmecs.script.FinalBlogScript@6895a785]" name="configSetup" is-config="true" duration-ms="22836" started-at="2019-10-01T20:34:04 IST" finished-at="2019-10-01T20:34:27 IST">
+    <test name="Test" duration-ms="57181" started-at="2019-10-03T21:31:43 IST" finished-at="2019-10-03T21:32:40 IST">
+      <class name="com.atmecs.scenerios.script.MoreInfoScriptFive">
+        <test-method status="PASS" signature="clickOnInfoFifth()[pri:11, instance:com.atmecs.scenerios.script.MoreInfoScriptFive@4d95d2a2]" name="clickOnInfoFifth" duration-ms="2436" started-at="2019-10-03T21:32:34 IST" finished-at="2019-10-03T21:32:36 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnInfoFifth -->
+        <test-method status="PASS" signature="ValiadteBreadCrumb()[pri:12, instance:com.atmecs.scenerios.script.MoreInfoScriptFive@4d95d2a2]" name="ValiadteBreadCrumb" duration-ms="3531" started-at="2019-10-03T21:32:36 IST" finished-at="2019-10-03T21:32:40 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValiadteBreadCrumb -->
+      </class> <!-- com.atmecs.scenerios.script.MoreInfoScriptFive -->
+      <class name="com.atmecs.scenerios.script.MoreInfoOneScript">
+        <test-method status="PASS" signature="clickOnInfo()[pri:3, instance:com.atmecs.scenerios.script.MoreInfoOneScript@1d29cf23]" name="clickOnInfo" duration-ms="2394" started-at="2019-10-03T21:32:14 IST" finished-at="2019-10-03T21:32:16 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnInfo -->
+        <test-method status="PASS" signature="validateBrudInfo1()[pri:4, instance:com.atmecs.scenerios.script.MoreInfoOneScript@1d29cf23]" name="validateBrudInfo1" duration-ms="2640" started-at="2019-10-03T21:32:16 IST" finished-at="2019-10-03T21:32:19 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateBrudInfo1 -->
+      </class> <!-- com.atmecs.scenerios.script.MoreInfoOneScript -->
+      <class name="com.atmecs.scenerios.script.MoreInfoScriptThird">
+        <test-method status="PASS" signature="clickOnInfomorethird()[pri:7, instance:com.atmecs.scenerios.script.MoreInfoScriptThird@167fdd33]" name="clickOnInfomorethird" duration-ms="2297" started-at="2019-10-03T21:32:24 IST" finished-at="2019-10-03T21:32:26 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnInfomorethird -->
+        <test-method status="PASS" signature="validateInfothirdbread()[pri:8, instance:com.atmecs.scenerios.script.MoreInfoScriptThird@167fdd33]" name="validateInfothirdbread" duration-ms="2410" started-at="2019-10-03T21:32:26 IST" finished-at="2019-10-03T21:32:29 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateInfothirdbread -->
+      </class> <!-- com.atmecs.scenerios.script.MoreInfoScriptThird -->
+      <class name="com.atmecs.scenerios.script.HomePageExploreScriptScenrio">
+        <test-method status="PASS" signature="configSetup()[pri:0, instance:com.atmecs.scenerios.script.HomePageExploreScriptScenrio@27a5f880]" name="configSetup" is-config="true" duration-ms="21194" started-at="2019-10-03T21:31:43 IST" finished-at="2019-10-03T21:32:04 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configSetup -->
-        <test-method status="PASS" signature="hoverOnSight()[pri:21, instance:com.atmecs.script.FinalBlogScript@6895a785]" name="hoverOnSight" duration-ms="13325" started-at="2019-10-01T20:34:27 IST" finished-at="2019-10-01T20:34:40 IST">
+        <test-method status="PASS" signature="ClickOnExplore()[pri:1, instance:com.atmecs.scenerios.script.HomePageExploreScriptScenrio@27a5f880]" name="ClickOnExplore" duration-ms="7810" started-at="2019-10-03T21:32:04 IST" finished-at="2019-10-03T21:32:12 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- hoverOnSight -->
-        <test-method status="PASS" signature="validateBlog()[pri:22, instance:com.atmecs.script.FinalBlogScript@6895a785]" name="validateBlog" duration-ms="760" started-at="2019-10-01T20:34:40 IST" finished-at="2019-10-01T20:34:41 IST">
+        </test-method> <!-- ClickOnExplore -->
+        <test-method status="PASS" signature="validateLandRight()[pri:2, instance:com.atmecs.scenerios.script.HomePageExploreScriptScenrio@27a5f880]" name="validateLandRight" duration-ms="2393" started-at="2019-10-03T21:32:12 IST" finished-at="2019-10-03T21:32:14 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validateBlog -->
-        <test-method status="PASS" signature="clickSumit()[pri:23, instance:com.atmecs.script.FinalBlogScript@6895a785]" name="clickSumit" duration-ms="638" started-at="2019-10-01T20:34:41 IST" finished-at="2019-10-01T20:34:41 IST">
+        </test-method> <!-- validateLandRight -->
+      </class> <!-- com.atmecs.scenerios.script.HomePageExploreScriptScenrio -->
+      <class name="com.atmecs.scenerios.script.MoreInfoScripTwo">
+        <test-method status="PASS" signature="clickOnInfomore2()[pri:5, instance:com.atmecs.scenerios.script.MoreInfoScripTwo@5f282abb]" name="clickOnInfomore2" duration-ms="2281" started-at="2019-10-03T21:32:19 IST" finished-at="2019-10-03T21:32:21 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- clickSumit -->
-      </class> <!-- com.atmecs.script.FinalBlogScript -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- clickOnInfomore2 -->
+        <test-method status="PASS" signature="valiadeinfoTwoBrud()[pri:6, instance:com.atmecs.scenerios.script.MoreInfoScripTwo@5f282abb]" name="valiadeinfoTwoBrud" duration-ms="2723" started-at="2019-10-03T21:32:21 IST" finished-at="2019-10-03T21:32:24 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- valiadeinfoTwoBrud -->
+      </class> <!-- com.atmecs.scenerios.script.MoreInfoScripTwo -->
+      <class name="com.atmecs.scenerios.script.MoreInfoScriptForth">
+        <test-method status="PASS" signature="clickOnInfoForth()[pri:9, instance:com.atmecs.scenerios.script.MoreInfoScriptForth@1e965684]" name="clickOnInfoForth" duration-ms="2376" started-at="2019-10-03T21:32:29 IST" finished-at="2019-10-03T21:32:31 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnInfoForth -->
+        <test-method status="PASS" signature="ValiadteBreadCrumb()[pri:10, instance:com.atmecs.scenerios.script.MoreInfoScriptForth@1e965684]" name="ValiadteBreadCrumb" duration-ms="2592" started-at="2019-10-03T21:32:31 IST" finished-at="2019-10-03T21:32:34 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValiadteBreadCrumb -->
+      </class> <!-- com.atmecs.scenerios.script.MoreInfoScriptForth -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

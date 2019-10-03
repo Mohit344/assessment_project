@@ -15,7 +15,7 @@ import org.testng.annotations.BeforeTest;
 import com.atmecs.constant.FileConstant;
 
  
-	public class Driver_Class {
+	public class DriverClass {
 		/**
 		 *switch case is created for the browsers-chrome,firefox.
 		 * @throws IOException
@@ -38,8 +38,6 @@ import com.atmecs.constant.FileConstant;
 			else
 			{
 				
-			
-			
 			switch (promote.getProperty("webdrivername")) {
 			case "chrome":
 				System.setProperty("webdriver.chrome.driver", FileConstant.chromeexe);
@@ -59,7 +57,7 @@ import com.atmecs.constant.FileConstant;
 			driver.get(promote.getProperty("url"));
 			driver.manage().window().maximize();
 			driver.manage().deleteAllCookies();
-			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+			driver.manage().timeouts().implicitlyWait(FileConstant.implicit_wait, TimeUnit.SECONDS);
 
 		}
 

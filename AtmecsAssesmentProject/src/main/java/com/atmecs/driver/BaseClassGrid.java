@@ -7,6 +7,8 @@ import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
+import com.atmecs.constant.FileConstant;
+
 public class BaseClassGrid {
      /**
       * RemoteWebDriver getDriver function is use to upload the browser.
@@ -15,7 +17,9 @@ public class BaseClassGrid {
       * @throws MalformedURLException
       */
 	public static RemoteWebDriver getDriver(String browser) throws MalformedURLException {
-		return new RemoteWebDriver(new URL("http://55.55.52.215:2000/wd/hub"), getBrowserCapabilities(browser));
+		//String systemip="http://55.55.52.215:2000/wd/hub";
+		
+		return new RemoteWebDriver(new URL(FileConstant.systemip), getBrowserCapabilities(browser));
 		}
 
 		private static DesiredCapabilities getBrowserCapabilities(String browserType) {
@@ -30,17 +34,20 @@ public class BaseClassGrid {
 		DesiredCapabilities capC= new DesiredCapabilities();
 		capC.setCapability(CapabilityType.BROWSER_NAME, "chrome");
 		return capC;
+		
+		case "ie":
+			System.out.println("ready in ie ");
+			DesiredCapabilities capie= new DesiredCapabilities();
+			capie.setCapability(CapabilityType.BROWSER_NAME, "ie");
+			return capie;
+		
 		default:
 		System.out.println("browser : " + browserType + " is invalid, Launching Firefox as browser of choice..");
 		DesiredCapabilities capfirefox= new DesiredCapabilities();
-		capfirefox.setCapability(CapabilityType.BROWSER_NAME, "firefox");
+		capfirefox.setCapability(CapabilityType.BROWSER_NAME, "chrome");
 		return capfirefox;
 
 		}
 
-		}
-
-	
-	
-	
+		}	
 }
