@@ -2,12 +2,12 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite">
 	<test thread-count="5" name="Test">
-		<classes>		
-	 	<class name="com.atmecs.script.AtmecsScript" />   <!-- script class name   -->
+		<classes>
+ 			
+			<class name="com.atmecs.script.AtmecsScript" />   <!-- script class name   -->
+			
+			
+		<!--  	<class name="com.atmecs.script.BlogScript" /> -->
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->
-
-
-
-

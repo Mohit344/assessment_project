@@ -1,75 +1,117 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="5" total="17" passed="12">
+<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="57181" started-at="2019-10-03T21:31:43 IST" finished-at="2019-10-03T21:32:40 IST">
+  <suite name="Suite" duration-ms="55568" started-at="2019-10-04T20:11:36 IST" finished-at="2019-10-04T20:12:32 IST">
     <groups>
     </groups>
-    <test name="Test" duration-ms="57181" started-at="2019-10-03T21:31:43 IST" finished-at="2019-10-03T21:32:40 IST">
-      <class name="com.atmecs.scenerios.script.MoreInfoScriptFive">
-        <test-method status="PASS" signature="clickOnInfoFifth()[pri:11, instance:com.atmecs.scenerios.script.MoreInfoScriptFive@4d95d2a2]" name="clickOnInfoFifth" duration-ms="2436" started-at="2019-10-03T21:32:34 IST" finished-at="2019-10-03T21:32:36 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clickOnInfoFifth -->
-        <test-method status="PASS" signature="ValiadteBreadCrumb()[pri:12, instance:com.atmecs.scenerios.script.MoreInfoScriptFive@4d95d2a2]" name="ValiadteBreadCrumb" duration-ms="3531" started-at="2019-10-03T21:32:36 IST" finished-at="2019-10-03T21:32:40 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ValiadteBreadCrumb -->
-      </class> <!-- com.atmecs.scenerios.script.MoreInfoScriptFive -->
-      <class name="com.atmecs.scenerios.script.MoreInfoOneScript">
-        <test-method status="PASS" signature="clickOnInfo()[pri:3, instance:com.atmecs.scenerios.script.MoreInfoOneScript@1d29cf23]" name="clickOnInfo" duration-ms="2394" started-at="2019-10-03T21:32:14 IST" finished-at="2019-10-03T21:32:16 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clickOnInfo -->
-        <test-method status="PASS" signature="validateBrudInfo1()[pri:4, instance:com.atmecs.scenerios.script.MoreInfoOneScript@1d29cf23]" name="validateBrudInfo1" duration-ms="2640" started-at="2019-10-03T21:32:16 IST" finished-at="2019-10-03T21:32:19 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateBrudInfo1 -->
-      </class> <!-- com.atmecs.scenerios.script.MoreInfoOneScript -->
-      <class name="com.atmecs.scenerios.script.MoreInfoScriptThird">
-        <test-method status="PASS" signature="clickOnInfomorethird()[pri:7, instance:com.atmecs.scenerios.script.MoreInfoScriptThird@167fdd33]" name="clickOnInfomorethird" duration-ms="2297" started-at="2019-10-03T21:32:24 IST" finished-at="2019-10-03T21:32:26 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clickOnInfomorethird -->
-        <test-method status="PASS" signature="validateInfothirdbread()[pri:8, instance:com.atmecs.scenerios.script.MoreInfoScriptThird@167fdd33]" name="validateInfothirdbread" duration-ms="2410" started-at="2019-10-03T21:32:26 IST" finished-at="2019-10-03T21:32:29 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateInfothirdbread -->
-      </class> <!-- com.atmecs.scenerios.script.MoreInfoScriptThird -->
-      <class name="com.atmecs.scenerios.script.HomePageExploreScriptScenrio">
-        <test-method status="PASS" signature="configSetup()[pri:0, instance:com.atmecs.scenerios.script.HomePageExploreScriptScenrio@27a5f880]" name="configSetup" is-config="true" duration-ms="21194" started-at="2019-10-03T21:31:43 IST" finished-at="2019-10-03T21:32:04 IST">
+    <test name="Test" duration-ms="55568" started-at="2019-10-04T20:11:36 IST" finished-at="2019-10-04T20:12:32 IST">
+      <class name="com.atmecs.script.AtmecsScript">
+        <test-method status="PASS" signature="configSetup()[pri:0, instance:com.atmecs.script.AtmecsScript@56aac163]" name="configSetup" is-config="true" duration-ms="15172" started-at="2019-10-04T20:11:36 IST" finished-at="2019-10-04T20:11:52 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configSetup -->
-        <test-method status="PASS" signature="ClickOnExplore()[pri:1, instance:com.atmecs.scenerios.script.HomePageExploreScriptScenrio@27a5f880]" name="ClickOnExplore" duration-ms="7810" started-at="2019-10-03T21:32:04 IST" finished-at="2019-10-03T21:32:12 IST">
+        <test-method status="PASS" signature="clickOnExploreNow(java.lang.String, java.lang.String)[pri:1, instance:com.atmecs.script.AtmecsScript@56aac163]" name="clickOnExploreNow" duration-ms="8262" started-at="2019-10-04T20:11:53 IST" data-provider="exploretestdata" finished-at="2019-10-04T20:12:01 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Services | Atmecs, Inc. | Digital Solutions & Product Engineering Services]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Home › Services]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ClickOnExplore -->
-        <test-method status="PASS" signature="validateLandRight()[pri:2, instance:com.atmecs.scenerios.script.HomePageExploreScriptScenrio@27a5f880]" name="validateLandRight" duration-ms="2393" started-at="2019-10-03T21:32:12 IST" finished-at="2019-10-03T21:32:14 IST">
+        </test-method> <!-- clickOnExploreNow -->
+        <test-method status="PASS" signature="clickOnMoreInfo(java.lang.String, java.lang.String)[pri:2, instance:com.atmecs.script.AtmecsScript@56aac163]" name="clickOnMoreInfo" duration-ms="6378" started-at="2019-10-04T20:12:01 IST" data-provider="moreinfotestdata" finished-at="2019-10-04T20:12:08 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Artificial Intelligence/Machine Learing | Leap at the possibilities of AI/ML]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Home › Services › Digital Life › Artificial Intelligence / Machine Learning]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validateLandRight -->
-      </class> <!-- com.atmecs.scenerios.script.HomePageExploreScriptScenrio -->
-      <class name="com.atmecs.scenerios.script.MoreInfoScripTwo">
-        <test-method status="PASS" signature="clickOnInfomore2()[pri:5, instance:com.atmecs.scenerios.script.MoreInfoScripTwo@5f282abb]" name="clickOnInfomore2" duration-ms="2281" started-at="2019-10-03T21:32:19 IST" finished-at="2019-10-03T21:32:21 IST">
+        </test-method> <!-- clickOnMoreInfo -->
+        <test-method status="PASS" signature="clickOnMoreInfo(java.lang.String, java.lang.String)[pri:2, instance:com.atmecs.script.AtmecsScript@56aac163]" name="clickOnMoreInfo" duration-ms="5070" started-at="2019-10-04T20:12:08 IST" data-provider="moreinfotestdata" finished-at="2019-10-04T20:12:13 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Mixed Reality | We engineer the technology. You achieve the unreal.]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Home › Services › Digital Life › Augmented Reality / Virtual Reality]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- clickOnInfomore2 -->
-        <test-method status="PASS" signature="valiadeinfoTwoBrud()[pri:6, instance:com.atmecs.scenerios.script.MoreInfoScripTwo@5f282abb]" name="valiadeinfoTwoBrud" duration-ms="2723" started-at="2019-10-03T21:32:21 IST" finished-at="2019-10-03T21:32:24 IST">
+        </test-method> <!-- clickOnMoreInfo -->
+        <test-method status="PASS" signature="clickOnMoreInfo(java.lang.String, java.lang.String)[pri:2, instance:com.atmecs.script.AtmecsScript@56aac163]" name="clickOnMoreInfo" duration-ms="5738" started-at="2019-10-04T20:12:13 IST" data-provider="moreinfotestdata" finished-at="2019-10-04T20:12:19 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Internet of Things | Reform your customer experience with IoT Data]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Home › Services › Digital Life › Internet of Things]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- valiadeinfoTwoBrud -->
-      </class> <!-- com.atmecs.scenerios.script.MoreInfoScripTwo -->
-      <class name="com.atmecs.scenerios.script.MoreInfoScriptForth">
-        <test-method status="PASS" signature="clickOnInfoForth()[pri:9, instance:com.atmecs.scenerios.script.MoreInfoScriptForth@1e965684]" name="clickOnInfoForth" duration-ms="2376" started-at="2019-10-03T21:32:29 IST" finished-at="2019-10-03T21:32:31 IST">
+        </test-method> <!-- clickOnMoreInfo -->
+        <test-method status="PASS" signature="clickOnMoreInfo(java.lang.String, java.lang.String)[pri:2, instance:com.atmecs.script.AtmecsScript@56aac163]" name="clickOnMoreInfo" duration-ms="6840" started-at="2019-10-04T20:12:19 IST" data-provider="moreinfotestdata" finished-at="2019-10-04T20:12:25 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[RPA & ChatBOTs | Pave way for digital transformation with RPA]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Home › Services › Digital Life › Robotic Process Automation & ChatBOTs]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- clickOnInfoForth -->
-        <test-method status="PASS" signature="ValiadteBreadCrumb()[pri:10, instance:com.atmecs.scenerios.script.MoreInfoScriptForth@1e965684]" name="ValiadteBreadCrumb" duration-ms="2592" started-at="2019-10-03T21:32:31 IST" finished-at="2019-10-03T21:32:34 IST">
+        </test-method> <!-- clickOnMoreInfo -->
+        <test-method status="PASS" signature="clickOnMoreInfo(java.lang.String, java.lang.String)[pri:2, instance:com.atmecs.script.AtmecsScript@56aac163]" name="clickOnMoreInfo" duration-ms="6547" started-at="2019-10-04T20:12:25 IST" data-provider="moreinfotestdata" finished-at="2019-10-04T20:12:32 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Blockchain | ATMECS, Inc.]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Home › Services › Digital Life › Blockchain]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ValiadteBreadCrumb -->
-      </class> <!-- com.atmecs.scenerios.script.MoreInfoScriptForth -->
+        </test-method> <!-- clickOnMoreInfo -->
+        <test-method status="PASS" signature="endReport()[pri:0, instance:com.atmecs.script.AtmecsScript@56aac163]" name="endReport" is-config="true" duration-ms="2097" started-at="2019-10-04T20:12:32 IST" finished-at="2019-10-04T20:12:34 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+      </class> <!-- com.atmecs.script.AtmecsScript -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

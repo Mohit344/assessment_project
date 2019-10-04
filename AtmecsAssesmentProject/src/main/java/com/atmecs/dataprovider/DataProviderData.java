@@ -14,21 +14,21 @@ public class DataProviderData {
 	 * Data provider 1
 	 * @return
 	 */
-		@DataProvider(name = "testdata1")
+		@DataProvider(name ="moreinfotestdata" )
 		public Object[][] getDataOne() {
-			ProviderData provideData = new ProviderData(FileConstant.testdata1);
+			ProviderData provideData = new ProviderData(FileConstant.infotestdata);
 			Object[][] getData = provideData.provideData();
 			return getData;
 		}
 	
 		
-		/**
+		/**moreinfotestdata
 		 * data provider 2
 		 * @return
 		 */
-		@DataProvider(name = "testdata2")
+		@DataProvider(name = "exploretestdata")
 		public Object[][] getDataSecond() {
-			ProviderData provideData = new ProviderData(FileConstant.testdata2);
+			ProviderData provideData = new ProviderData(FileConstant.exploretestdata);
 			Object[][] getData = provideData.provideData();
 			return getData;
 		}
@@ -37,25 +37,25 @@ public class DataProviderData {
 		 * Data provider 3
 		 * @return
 		 */
-			@DataProvider(name = "testdata3")
-			public Object[][] getDataThird() {
-				ProviderData provideData = new ProviderData(FileConstant.testdata3);
-				Object[][] getData = provideData.provideData();
-				return getData;
-			}
-		
-			/**
-			 * Data provider 4
-			 * @return
-			 */
-				@DataProvider(name = "testdata4")
-				public Object[][] getDataForth() {
-					ProviderData provideData = new ProviderData(FileConstant.testdata4);
-					Object[][] getData = provideData.provideData();
-					return getData;
-				}
-		
-		
-		
+//			@DataProvider(name = "testdata")
+//			public Object[][] getDataThird() {
+//				//ProviderData provideData = new ProviderData(FileConstant.infotestdata);
+//				Object[][] getData = provideData.provideData();
+//				return getData;
+//			}
+//		
+//			/**
+//			 * Data provider 4
+//			 * @return
+//			 */
+//				@DataProvider(name = "testdata4")
+//				public Object[][] getDataForth() {
+//					ProviderData provideData = new ProviderData(FileConstant.testdata4);
+//					Object[][] getData = provideData.provideData();
+//					return getData;
+//				}
+//		
+//		
+//		
 		
 }

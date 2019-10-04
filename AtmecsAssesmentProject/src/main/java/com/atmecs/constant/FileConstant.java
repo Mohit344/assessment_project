@@ -14,10 +14,7 @@ public class FileConstant {
     public static final int implicit_wait=30;
     public static final int polling_time=1000;
     public static final String VALIDATION_FILE="./src/test/resources/testdata/validation.properties";
-    public static final String testdata4="./src/test/resources/testdata/testdata4.xlsx";
-    public static final String testdata3="./src/test/resources/testdata/testdata3.xlsx";
-    public static final String testdata2="./src/test/resources/testdata/testdata2.xlsx";
-    public static final String testdata1="./src/test/resources/testdata/testdata.xlsx";
+    
     public static final String config="./src/test/resources/testdata/config.properties";
     public static final String findlocator="./src/test/resources/locators/xpathlocators.properties";
     public static final String  chromeexe="./lib/chromedriver.exe";
@@ -31,6 +28,9 @@ public class FileConstant {
     public static final String bloxkchain="http://www.atmecs.com/services/digital-life/blockchain/";
     public static final String urlexplore="http://www.atmecs.com/services/";
     
+    public static final String exploretestdata="./src/test/resources/testdata/exploretestdata.xlsx";
+    
+    public static final String infotestdata="./src/test/resources/testdata/moreinfotestdata.xlsx";
     
 
 }
